@@ -1,0 +1,2 @@
+../Core/Src/spi.c:13:6:dump_gpio_info	11
+../Core/Src/spi.c:29:6:dump_spi1_gpio_into	1

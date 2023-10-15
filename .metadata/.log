@@ -23,3 +23,12 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/deep/
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-10-15 12:07:18.346
 !MESSAGE Indexed 'interactive' (36 sources, 100 headers) in 6.85 sec: 7,777 declarations; 48,986 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0035%)
+
+!ENTRY com.percepio.tracealyzer.ui 1 0 2023-10-15 14:41:02.137
+!MESSAGE ContextManager.reportStatus(): Context for Session 0 (org.eclipse.cdt.dsf.gdb)
+
+!ENTRY com.percepio.tracealyzer.ui 1 0 2023-10-15 14:41:04.562
+!MESSAGE ContextManager.reportStatus(): Context for Session 0 (org.eclipse.cdt.dsf.gdb) (repeated)
+
+!ENTRY com.percepio.tracealyzer.ui 2 0 2023-10-15 14:41:04.592
+!MESSAGE ContextManager.reportWarning(): Session for current Context ended
