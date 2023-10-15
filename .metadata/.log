@@ -1,0 +1,25 @@
+!SESSION 2023-10-15 11:55:37.699 -----------------------------------------------
+eclipse.buildId=Version 1.13.2
+java.version=17.0.6
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -keyring /Users/deep/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/deep/.eclipse_keyring
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2023-10-15 11:58:07.820
+!MESSAGE Log4j2 initialized with config file /Users/deep/build/tf/stm32/stm32-cli-template/.metadata/.log4j2.xml
+
+!ENTRY com.percepio.tracealyzer.core 1 0 2023-10-15 11:58:10.235
+!MESSAGE Activator.start(): Called from com.percepio.tracealyzer.core, version: 1.1.4.v201906050834
+
+!ENTRY com.percepio.tracealyzer.core 2 0 2023-10-15 11:58:10.250
+!MESSAGE ContextManager.reportWarning(): No debug context found
+
+!ENTRY com.percepio.tracealyzer.ui 1 0 2023-10-15 11:58:10.270
+!MESSAGE Activator.start(): Called from com.percepio.tracealyzer.ui, version: 1.1.4.v201906050834
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2023-10-15 11:58:14.267
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2023-10-15 12:07:18.346
+!MESSAGE Indexed 'interactive' (36 sources, 100 headers) in 6.85 sec: 7,777 declarations; 48,986 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0035%)
