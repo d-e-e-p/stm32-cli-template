@@ -986,3 +986,145 @@
 2023-10-15 12:07:13,275 [INFO] ApiDb:452 - User favorites MCUs=[]
 2023-10-15 12:07:13,295 [INFO] ApiDb:448 - Save user favorites file /Users/deep/.stm32cubeide/favorites.boards.txt: 1 item(s)
 2023-10-15 12:07:13,296 [INFO] ApiDb:452 - User favorites Boards=[STM32F407G-DISC1]
+2023-10-15 12:27:17,900 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:27:20,743 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:27:20,806 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:27:29,529 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:27:29,589 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:27:44,198 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:27:47,439 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:47,443 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:47,446 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:47,446 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:47,591 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:47,594 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:47,615 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:47,615 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:47,692 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:27:52,870 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:52,874 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:52,875 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:52,875 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:52,922 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:52,922 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:52,939 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:52,939 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:53,004 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:27:55,970 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:55,974 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:55,975 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:55,975 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:56,028 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:56,029 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:56,047 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:56,047 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:56,090 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:27:59,628 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:59,632 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:59,632 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:59,632 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:59,684 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:59,684 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:59,701 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:59,701 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:27:59,749 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:28:02,735 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:28:02,739 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:28:02,739 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:28:02,739 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:28:02,781 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:28:02,781 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:28:02,800 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:28:02,800 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:28:02,847 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:30:07,301 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:30:10,414 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:31:33,463 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,450x318,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-10-15 12:31:35,060 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-10-15 12:31:50,019 [WARN] BspModel:444 - BSP dependency skipped because of component: name='IOExpander', api='Unknown'
+2023-10-15 12:38:00,791 [WARN] IP:2114 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:00,796 [WARN] IP:2114 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:00,796 [WARN] IP:2114 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:00,805 [WARN] IP:2114 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:00,805 [WARN] IP:2114 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:00,805 [WARN] IP:2114 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:00,883 [WARN] IP:2114 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:00,883 [WARN] IP:2114 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:00,883 [WARN] IP:2114 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:01,140 [WARN] IP:2114 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:01,144 [WARN] IP:2114 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:01,145 [WARN] IP:2114 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:07,651 [WARN] IP:2114 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:07,652 [WARN] IP:2114 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:38:07,652 [WARN] IP:2114 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:39:57,802 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 720982064 Bytes (1073741824)
+2023-10-15 12:40:03,011 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 771835952 Bytes (1073741824)
+2023-10-15 12:40:07,924 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 802770992 Bytes (1073741824)
+2023-10-15 12:40:08,222 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SPI
+2023-10-15 12:40:08,222 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: TIM1_8
+2023-10-15 12:40:08,222 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_DEVICE
+2023-10-15 12:40:08,222 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-10-15 12:40:08,222 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-10-15 12:40:08,222 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: I2C
+2023-10-15 12:40:08,222 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: USB_OTG_FS
+2023-10-15 12:40:08,222 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-10-15 12:40:08,223 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-10-15 12:40:08,224 [INFO] CodeGenerator:799 - code generatio: config db path: /Applications/STM32CubeIDE.app/Contents/Eclipse/plugins/com.st.stm32cube.common.mx_6.9.2.202309101412//db/
+2023-10-15 12:40:08,229 [WARN] IP:2114 - I2C_Coeff_DF not found: check if there is a RefParameter without a condition.
+2023-10-15 12:40:08,229 [WARN] IP:2114 - Analog_Filter not found: check if there is a RefParameter without a condition.
+2023-10-15 12:40:08,261 [WARN] IP:2114 - DEVICE_SERIAL0_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:40:08,261 [WARN] IP:2114 - DEVICE_SERIAL1_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:40:08,261 [WARN] IP:2114 - DEVICE_SERIAL2_CDC_FS not found: check if there is a RefParameter without a condition.
+2023-10-15 12:40:08,424 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/license.tmp_save
+2023-10-15 12:40:08,781 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/license.tmp
+2023-10-15 12:40:08,852 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/gpio.tmp_save
+2023-10-15 12:40:08,996 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/gpio.tmp
+2023-10-15 12:40:09,093 [WARN] IPConfigManager:2937 - Warning: the RefConfig PWREx_EnableUSBVoltageDetector is not available in your config.xml file
+2023-10-15 12:40:09,104 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/usb_otg_fs_vars.tmp_save
+2023-10-15 12:40:09,222 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/usb_otg_fs_vars.tmp
+2023-10-15 12:40:09,226 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/usb_otg_fs_inc.tmp_save
+2023-10-15 12:40:09,293 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/usb_otg_fs_inc.tmp
+2023-10-15 12:40:09,296 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/usb_otg_fs_HalInit.tmp_save
+2023-10-15 12:40:09,440 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/usb_otg_fs_HalInit.tmp
+2023-10-15 12:40:09,446 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/usb_otg_fs_Msp.tmp_save
+2023-10-15 12:40:09,611 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/usb_otg_fs_Msp.tmp
+2023-10-15 12:40:10,043 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-15 12:40:10,062 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-10-15 12:40:10,082 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usb_device.c_save
+2023-10-15 12:40:10,171 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usb_device.c
+2023-10-15 12:40:10,176 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usb_device.h_save
+2023-10-15 12:40:10,291 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usb_device.h
+2023-10-15 12:40:10,296 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/Target/usbd_conf.h_save
+2023-10-15 12:40:10,378 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/Target/usbd_conf.h
+2023-10-15 12:40:10,383 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/Target/usbd_conf.c_save
+2023-10-15 12:40:10,459 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/Target/usbd_conf.c
+2023-10-15 12:40:10,466 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usbd_desc.h_save
+2023-10-15 12:40:10,523 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usbd_desc.h
+2023-10-15 12:40:10,537 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usbd_desc.c_save
+2023-10-15 12:40:10,689 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usbd_desc.c
+2023-10-15 12:40:10,712 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usbd_cdc_if.h_save
+2023-10-15 12:40:10,793 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usbd_cdc_if.h
+2023-10-15 12:40:10,801 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usbd_cdc_if.c_save
+2023-10-15 12:40:10,867 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/USB_DEVICE/App/usbd_cdc_if.c
+2023-10-15 12:40:10,888 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Src/stm32f4xx_it.c_save
+2023-10-15 12:40:11,054 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Src/stm32f4xx_it.c
+2023-10-15 12:40:11,058 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Inc/stm32f4xx_it.h_save
+2023-10-15 12:40:11,110 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Inc/stm32f4xx_it.h
+2023-10-15 12:40:11,136 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Src/stm32f4xx_hal_msp.c_save
+2023-10-15 12:40:11,240 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Src/stm32f4xx_hal_msp.c
+2023-10-15 12:40:11,245 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/system.tmp_save
+2023-10-15 12:40:11,305 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/MXTmpFiles/system.tmp
+2023-10-15 12:40:11,313 [INFO] CodeEngine:311 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Inc/stm32f4xx_hal_conf.h_save
+2023-10-15 12:40:11,394 [INFO] CodeEngine:335 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Inc/stm32f4xx_hal_conf.h
+2023-10-15 12:40:11,485 [WARN] IPConfigManager:3431 - IP not found : TIM
+2023-10-15 12:40:11,486 [WARN] CodeGenerator:3764 - IP not found : null
+2023-10-15 12:40:11,495 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Inc/main.h_save
+2023-10-15 12:40:11,582 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Inc/main.h
+2023-10-15 12:40:11,591 [INFO] CodeEngine:255 - oldGeneratedFile, /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Src/main.c_save
+2023-10-15 12:40:11,713 [INFO] CodeEngine:279 - Generated code: /Users/deep/build/tf/stm32/stm32-cli-template/interactive/Core/Src/main.c
+2023-10-15 12:40:12,291 [INFO] ProjectBuilder:3064 - Time for Copy HAL[1] : 218mS.
+2023-10-15 12:40:12,307 [INFO] ProjectBuilder:4404 - Project Generator version: 4.1.0
+2023-10-15 12:40:12,659 [INFO] ConfigFileManager:1457 - The Die is : DIE413
+2023-10-15 12:40:16,539 [INFO] ProjectBuilder:4626 - Time for Generating toolchain IDE Files: 4230mS.
+2023-10-15 12:40:16,544 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 1mS.
+2023-10-15 12:40:16,560 [INFO] ProjectBuilder:2935 - Time for Copy CMSIS : 0mS.
