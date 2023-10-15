@@ -32,3 +32,12 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -keyring /Users/deep/
 
 !ENTRY com.percepio.tracealyzer.ui 2 0 2023-10-15 14:41:04.592
 !MESSAGE ContextManager.reportWarning(): Session for current Context ended
+
+!ENTRY com.percepio.tracealyzer.ui 1 0 2023-10-15 15:01:26.215
+!MESSAGE ContextManager.reportStatus(): Context for Session 1 (org.eclipse.cdt.dsf.gdb)
+
+!ENTRY com.percepio.tracealyzer.ui 1 0 2023-10-15 15:01:33.967
+!MESSAGE ContextManager.reportStatus(): Context for Session 1 (org.eclipse.cdt.dsf.gdb) (repeated)
+
+!ENTRY com.percepio.tracealyzer.ui 2 0 2023-10-15 15:01:34.013
+!MESSAGE ContextManager.reportWarning(): Session for current Context ended

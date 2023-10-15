@@ -30,7 +30,15 @@ flags = [
     '-I', '../src',
     '-I', '../Src',
     '-I', '../Inc',
-    '-I', '.',
+    '-I', '../../Core/Inc',
+    '-I', '../../Drivers/STM32F4xx_HAL_Driver/Inc',
+    '-I', '../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy',
+    '-I', '../../Drivers/CMSIS/Device/ST/STM32F4xx/Include',
+    '-I', '../../Drivers/CMSIS/Include',
+    '-I', '../../USB_DEVICE/App',
+    '-I', '../../USB_DEVICE/Target',
+    '-I', '../../Middlewares/ST/STM32_USB_Device_Library/Core/Inc',
+    '-I', '../../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc',
 ]
 
 

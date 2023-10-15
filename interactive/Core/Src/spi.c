@@ -11,7 +11,9 @@
 #define SPI1_MOSI_GPIO_Port GPIOA
 
 void dump_gpio_info(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin) {
-    printf("	GPIO port: %p pin: %d\n", GPIOx, GPIO_Pin);
+
+    GPIO_PinState value = HAL_GPIO_ReadPin(GPIOx, GPIO_Pin);
+    printf("	GPIO port: %p pin: %d value: %d\n", GPIOx, GPIO_Pin, value);
 
     uint32_t moder = (GPIOx->MODER >> (GPIO_Pin * 2)) & 0x3;
     printf("	GPIO mode: %s\n", moder == 0 ? "Input" : moder == 1 ? "Output" : moder == 2 ? "Alternate Function" : "Analog");

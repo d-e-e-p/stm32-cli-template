@@ -1,2 +1,2 @@
-../Core/Src/spi.c:13:6:dump_gpio_info	32	static
-../Core/Src/spi.c:29:6:dump_spi1_gpio_into	8	static
+../Core/Src/spi.c:13:6:dump_gpio_info	40	static
+../Core/Src/spi.c:31:6:dump_spi1_gpio_info	8	static
