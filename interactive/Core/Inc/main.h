@@ -32,6 +32,11 @@ extern "C" {
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 
+extern TIM_HandleTypeDef htim2;
+extern TIM_HandleTypeDef htim4;
+extern SPI_HandleTypeDef hspi1;
+extern uint8_t rx, tx;
+
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

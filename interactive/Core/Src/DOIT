@@ -1,0 +1,5 @@
+#!/bin/bash -x
+rm main.c
+cd ../../USB_DEVICE/App/
+cp usbd_cdc_if.h.mod usbd_cdc_if.h
+cp usbd_cdc_if.c.mod usbd_cdc_if.c

@@ -1,10 +1,10 @@
-15:01:21 **** Incremental Build of configuration Debug for project interactive ****
+19:51:18 **** Incremental Build of configuration Debug for project interactive ****
 make -j9 all 
 arm-none-eabi-size   interactive.elf 
    text	   data	    bss	    dec	    hex	filename
- 220512	   1016	  27832	 249360	  3ce10	interactive.elf
+ 219048	   1016	  27864	 247928	  3c878	interactive.elf
 Finished building: default.size.stdout
  
 
-15:01:21 Build Finished. 0 errors, 0 warnings. (took 528ms)
+19:51:18 Build Finished. 0 errors, 0 warnings. (took 500ms)
 

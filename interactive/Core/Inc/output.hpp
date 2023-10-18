@@ -129,15 +129,14 @@ void cppprintf(const char* format, int&&... args);
 struct tickMsg {
     uint32_t time_a {}; 
     uint32_t time_diff {};
-    int cnt_bit_num {};
-    int cnt_tick {};
-    int cnt_loop_repeat_bit_num {};
-    int cnt_loop_repeat_pattern_num {};
+    uint32_t spiFlags {};
+    HAL_StatusTypeDef status {};
+    uint32_t tx {};
+    uint32_t rx {};
 };
 
+void addTickMsg(uint32_t spiFlags, HAL_StatusTypeDef status, uint32_t tx, uint32_t rx);
 void dumpTickMsg(int n);
-void addTickMsg( uint32_t time_a, uint32_t time_diff,
-        int cnt_bit_num, int cnt_tick, int cnt_loop_repeat_bit_num, int cnt_loop_repeat_pattern_num);
 
 // list from https://stackoverflow.com/questions/24281603/c-underline-output
 //  002 (bold), 003 (colour), 017 (plain), 026 (reverse) and 037 (underline).

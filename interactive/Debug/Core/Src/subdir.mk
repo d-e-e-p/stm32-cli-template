@@ -5,7 +5,6 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Core/Src/spi.c \
 ../Core/Src/stm32f4xx_hal_msp.c \
 ../Core/Src/stm32f4xx_it.c \
 ../Core/Src/syscalls.c \
@@ -15,10 +14,10 @@ C_SRCS += \
 CPP_SRCS += \
 ../Core/Src/crc8.cpp \
 ../Core/Src/main.cpp \
-../Core/Src/output.cpp 
+../Core/Src/output.cpp \
+../Core/Src/spi.cpp 
 
 C_DEPS += \
-./Core/Src/spi.d \
 ./Core/Src/stm32f4xx_hal_msp.d \
 ./Core/Src/stm32f4xx_it.d \
 ./Core/Src/syscalls.d \
@@ -39,7 +38,8 @@ OBJS += \
 CPP_DEPS += \
 ./Core/Src/crc8.d \
 ./Core/Src/main.d \
-./Core/Src/output.d 
+./Core/Src/output.d \
+./Core/Src/spi.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

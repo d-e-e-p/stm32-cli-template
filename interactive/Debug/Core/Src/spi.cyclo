@@ -1,2 +1,2 @@
-../Core/Src/spi.c:13:6:dump_gpio_info	11
-../Core/Src/spi.c:31:6:dump_spi1_gpio_info	1
+../Core/Src/spi.cpp:13:6:void dump_gpio_info(GPIO_TypeDef*, uint16_t)	11
+../Core/Src/spi.cpp:31:6:void dump_spi1_gpio_info()	1

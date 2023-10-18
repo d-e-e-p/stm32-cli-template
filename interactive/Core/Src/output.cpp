@@ -8,6 +8,7 @@
 #include <regex>
 #include <map>
 
+#include "queue.hpp"
 #include "main.h"
 #include "local.hpp"
 #include "usbd_cdc_if.h"
@@ -72,33 +73,6 @@ int _write(int file, char *ptr, int len) {
 }
 #endif
 
-
-// try diffent queue types for speed of adding
-queue<char *> writeBufferQueue;             // 11us
-queue<Printer> writePrinterQueue;           // 135us
-//queue<tickMsg> tickMsgBuffer;               //  30us
-//circularBuffer<tickMsg> tickMsgBuffer;    //  40us
-
-const unsigned int maxQueueSize = 24; 
-
-
-/*
-template<class... Args>
-void cppprintf(const char* format, Args&&... args) {    
-
-    printf(format, std::forward<Args>(args)...);
-}
-
-// from https://stackoverflow.com/questions/22011511/pre-parse-cache-printf-style-format-string
-template<typename... Args>
-int cppprintf(const char* const fmt, Args...) {
-    int m_textSize = 10;
-    char m_text[m_textSize];
-    int len = std::min(snprintf(m_text, m_textSize, fmt, std::forward<Args>(args)...), m_textSize);
-    m_text[len] = '\0';
-    return len;
-}
-*/
 
 
 
@@ -209,4 +183,43 @@ void printHelloMsg() {
 
 }
 
+// msg support
+const unsigned int maxQueueSize = 10000;
+//fixedQueue<tickMsg, maxQueueSize> tickMsgBuffer;
+std::queue<tickMsg> tickMsgBuffer;
+
+uint32_t time_last = 0;
+void addTickMsg(uint32_t spiFlags, HAL_StatusTypeDef status, uint32_t tx, uint32_t rx) {
+  uint32_t time_a = __HAL_TIM_GET_COUNTER(&htim2);
+  uint32_t time_diff = time_a - time_last;
+  tickMsg p{time_a, time_diff, spiFlags, status, tx, rx};
+  tickMsgBuffer.push(p);
+  time_last = time_a;
+}
+
+void dumpTickMsg(int n) {
+
+  int size = tickMsgBuffer.size();
+  if (size == 0) {
+      return;
+  }
+
+  // if n is less than zero, dump all messages in queue
+  if ((n < 0) || (n > size)) {
+      n = size;
+  }
+
+  tickMsg p;
+  for (int i=0; i < n; ++i) {
+    p = tickMsgBuffer.front();
+    bool is_busy = p.spiFlags & SPI_FLAG_BSY;
+    bool is_overrun = p.spiFlags & SPI_FLAG_OVR;
+    //bool is_rx_buffer_empty = ! (p.spiFlags & SPI_FLAG_RXNE);
+    //bool is_tx_buffer_empty = p.spiFlags & SPI_FLAG_TXE;
+    uprintf("%8d us (delta=%8d us): (busy=%d, overrun=%d) (tx=%02x rx=%02x)\r\n",
+            p.time_a, p.time_diff, is_busy, is_overrun, p.tx, p.rx);
+    tickMsgBuffer.pop();
+  }
+
+}
 
