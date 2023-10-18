@@ -109,6 +109,12 @@ int main(void)
   printHelloMsg();
   dump_spi1_gpio_info();
 
+  HAL_TIM_Base_Init(&htim2);
+  HAL_TIM_Base_Start(&htim2);
+  HAL_TIM_Base_Init(&htim4);
+  HAL_TIM_Base_Start_IT(&htim4);
+  uprintf("timers tim2 and tim4 started: tim2 = %d \r\n", __HAL_TIM_GET_COUNTER(&htim2));
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -118,10 +124,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    //process_spi_msg(&hspi1);
-  printHelloMsg();
-  }
+    process_spi_msg(&hspi1);
   /* USER CODE END 3 */
+  }
 }
 
 /**

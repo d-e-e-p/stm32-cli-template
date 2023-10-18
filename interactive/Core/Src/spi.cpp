@@ -37,6 +37,7 @@ void dump_spi1_gpio_info() {
   uprintf(" SPI1_MOSI: ");  dump_gpio_info(SPI1_MOSI_GPIO_Port, SPI1_MOSI_Pin);
   uprintf(" SPI1_CS: ");    dump_gpio_info(SPI1_CS_GPIO_Port,   SPI1_CS_Pin);
 
+
   /*
   GPIO_InitTypeDef GPIO_InitStruct = {0};
   GPIO_InitStruct.Pin = SPI1_MISO_Pin;
@@ -72,6 +73,7 @@ void process_spi_msg(SPI_HandleTypeDef *hspi) {
   uint32_t spiFlags = hspi->Instance->SR;
   addTickMsg(spiFlags, status, tx, rx);
   tx = rx;
+  dumpTickMsg(0);
 }
 
 uint8_t buffer[1];

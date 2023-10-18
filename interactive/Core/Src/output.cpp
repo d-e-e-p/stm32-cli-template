@@ -204,20 +204,27 @@ void dumpTickMsg(int n) {
       return;
   }
 
-  // if n is less than zero, dump all messages in queue
-  if ((n < 0) || (n > size)) {
-      n = size;
-  }
+  // if n is less than zero, dump all messages in fixed size queue
+  //if ((n < 0) || (n > size)) {
+  //    n = size;
+  //}
+  n = size;
 
   tickMsg p;
   for (int i=0; i < n; ++i) {
     p = tickMsgBuffer.front();
+    uprintf("%8d us (delta=%8d us): (tx=%02x rx=%02x) ",
+            p.time_a, p.time_diff, p.tx, p.rx);
+
     bool is_busy = p.spiFlags & SPI_FLAG_BSY;
     bool is_overrun = p.spiFlags & SPI_FLAG_OVR;
-    //bool is_rx_buffer_empty = ! (p.spiFlags & SPI_FLAG_RXNE);
-    //bool is_tx_buffer_empty = p.spiFlags & SPI_FLAG_TXE;
-    uprintf("%8d us (delta=%8d us): (busy=%d, overrun=%d) (tx=%02x rx=%02x)\r\n",
-            p.time_a, p.time_diff, is_busy, is_overrun, p.tx, p.rx);
+    bool is_rx_buffer_empty = ! (p.spiFlags & SPI_FLAG_RXNE);
+    bool is_tx_buffer_empty = p.spiFlags & SPI_FLAG_TXE;
+
+    if (is_busy) 
+      uprintf("%s BUSY %s", colorMap["red"], colorMap["reset"]); 
+
+    uprintf("\r\n");
     tickMsgBuffer.pop();
   }
 

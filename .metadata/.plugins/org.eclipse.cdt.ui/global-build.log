@@ -3402,3 +3402,687 @@ arm-none-eabi-size   interactive.elf
  219048	   1016	  27864	 247928	  3c878	interactive.elf
 Finished building: default.size.stdout
  
+19:57:59 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ "../Core/Src/output.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/output.d" -MT"Core/Src/output.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/output.o"
+arm-none-eabi-g++ "../Core/Src/spi.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/spi.cpp:2:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.cpp:20:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+../Core/Src/main.cpp: In function 'int main()':
+../Core/Src/main.cpp:130:1: error: a function-definition is not allowed here before '{' token
+  130 | {
+      | ^
+../Core/Src/main.cpp:176:1: error: a function-definition is not allowed here before '{' token
+  176 | {
+      | ^
+../Core/Src/main.cpp:210:1: error: a function-definition is not allowed here before '{' token
+  210 | {
+      | ^
+../Core/Src/main.cpp:247:1: error: a function-definition is not allowed here before '{' token
+  247 | {
+      | ^
+../Core/Src/main.cpp:292:1: error: a function-definition is not allowed here before '{' token
+  292 | {
+      | ^
+../Core/Src/main.cpp:337:1: error: a function-definition is not allowed here before '{' token
+  337 | {
+      | ^
+../Core/Src/main.cpp:444:1: error: a function-definition is not allowed here before '{' token
+  444 | {
+      | ^
+../Core/Src/main.cpp:452:2: error: expected '}' at end of input
+  452 | }
+      |  ^
+../Core/Src/main.cpp:78:1: note: to match this '{'
+   78 | {
+      | ^
+../Core/Src/main.cpp: At global scope:
+../Core/Src/main.cpp:59:13: warning: 'void MX_GPIO_Init()' declared 'static' but never defined [-Wunused-function]
+   59 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.cpp:60:13: warning: 'void MX_I2C1_Init()' declared 'static' but never defined [-Wunused-function]
+   60 | static void MX_I2C1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.cpp:61:13: warning: 'void MX_SPI1_Init()' declared 'static' but never defined [-Wunused-function]
+   61 | static void MX_SPI1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.cpp:62:13: warning: 'void MX_TIM4_Init()' declared 'static' but never defined [-Wunused-function]
+   62 | static void MX_TIM4_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.cpp:63:13: warning: 'void MX_TIM2_Init()' declared 'static' but never defined [-Wunused-function]
+   63 | static void MX_TIM2_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.cpp:63:13: warning: 'void MX_TIM2_Init()' used but never defined
+../Core/Src/main.cpp:62:13: warning: 'void MX_TIM4_Init()' used but never defined
+   62 | static void MX_TIM4_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.cpp:61:13: warning: 'void MX_SPI1_Init()' used but never defined
+   61 | static void MX_SPI1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.cpp:60:13: warning: 'void MX_I2C1_Init()' used but never defined
+   60 | static void MX_I2C1_Init(void);
+      |             ^~~~~~~~~~~~
+../Core/Src/main.cpp:59:13: warning: 'void MX_GPIO_Init()' used but never defined
+   59 | static void MX_GPIO_Init(void);
+      |             ^~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:47: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/output.cpp:12:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+"make -j9 all" terminated with exit code 2. Build might be incomplete.
+19:58:42 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.cpp:20:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.cpp:20:
+../Core/Src/main.cpp: In function 'void SystemClock_Config()':
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:512:41: note: in expansion of macro 'SET_BIT'
+  512 |                                         SET_BIT(RCC->APB1ENR, RCC_APB1ENR_PWREN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:137:3: note: in expansion of macro '__HAL_RCC_PWR_CLK_ENABLE'
+  137 |   __HAL_RCC_PWR_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.cpp: In function 'void MX_GPIO_Init()':
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:2046:41: note: in expansion of macro 'SET_BIT'
+ 2046 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOEEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:344:3: note: in expansion of macro '__HAL_RCC_GPIOE_CLK_ENABLE'
+  344 |   __HAL_RCC_GPIOE_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:400:41: note: in expansion of macro 'SET_BIT'
+  400 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOCEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:345:3: note: in expansion of macro '__HAL_RCC_GPIOC_CLK_ENABLE'
+  345 |   __HAL_RCC_GPIOC_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:407:41: note: in expansion of macro 'SET_BIT'
+  407 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOHEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:346:3: note: in expansion of macro '__HAL_RCC_GPIOH_CLK_ENABLE'
+  346 |   __HAL_RCC_GPIOH_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:386:41: note: in expansion of macro 'SET_BIT'
+  386 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOAEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:347:3: note: in expansion of macro '__HAL_RCC_GPIOA_CLK_ENABLE'
+  347 |   __HAL_RCC_GPIOA_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:393:41: note: in expansion of macro 'SET_BIT'
+  393 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOBEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:348:3: note: in expansion of macro '__HAL_RCC_GPIOB_CLK_ENABLE'
+  348 |   __HAL_RCC_GPIOB_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:2039:41: note: in expansion of macro 'SET_BIT'
+ 2039 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIODEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:349:3: note: in expansion of macro '__HAL_RCC_GPIOD_CLK_ENABLE'
+  349 |   __HAL_RCC_GPIOD_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 225792	   1024	  27904	 254720	  3e300	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:00:54 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/spi.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/spi.cpp:2:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 225824	   1024	  27904	 254752	  3e320	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:02:31 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/output.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/output.d" -MT"Core/Src/output.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/output.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/output.cpp:12:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 225848	   1024	  27904	 254776	  3e338	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:04:28 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/output.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/output.d" -MT"Core/Src/output.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/output.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/output.cpp:12:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 225872	   1024	  27904	 254800	  3e350	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:06:23 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/output.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/output.d" -MT"Core/Src/output.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/output.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/output.cpp:12:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 225840	   1024	  27904	 254768	  3e330	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:14:21 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/output.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/output.d" -MT"Core/Src/output.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/output.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/output.cpp:12:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+../Core/Src/output.cpp: In function 'void dumpTickMsg(int)':
+../Core/Src/output.cpp:216:10: warning: unused variable 'is_busy' [-Wunused-variable]
+  216 |     bool is_busy = p.spiFlags & SPI_FLAG_BSY;
+      |          ^~~~~~~
+../Core/Src/output.cpp:217:10: warning: unused variable 'is_overrun' [-Wunused-variable]
+  217 |     bool is_overrun = p.spiFlags & SPI_FLAG_OVR;
+      |          ^~~~~~~~~~
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 225800	   1024	  27904	 254728	  3e308	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:17:19 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/output.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/output.d" -MT"Core/Src/output.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/output.o"
+arm-none-eabi-g++ "../Core/Src/spi.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/spi.cpp:2:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/output.cpp:12:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+../Core/Src/output.cpp: In function 'void dumpTickMsg(int)':
+../Core/Src/output.cpp:216:10: warning: unused variable 'is_busy' [-Wunused-variable]
+  216 |     bool is_busy = p.spiFlags & SPI_FLAG_BSY;
+      |          ^~~~~~~
+../Core/Src/output.cpp:217:10: warning: unused variable 'is_overrun' [-Wunused-variable]
+  217 |     bool is_overrun = p.spiFlags & SPI_FLAG_OVR;
+      |          ^~~~~~~~~~
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 225768	   1024	  27904	 254696	  3e2e8	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:20:33 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/output.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/output.d" -MT"Core/Src/output.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/output.o"
+arm-none-eabi-g++ "../Core/Src/spi.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/spi.cpp:2:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/output.cpp:12:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+../Core/Src/output.cpp: In function 'void dumpTickMsg(int)':
+../Core/Src/output.cpp:216:10: warning: unused variable 'is_busy' [-Wunused-variable]
+  216 |     bool is_busy = p.spiFlags & SPI_FLAG_BSY;
+      |          ^~~~~~~
+../Core/Src/output.cpp:217:10: warning: unused variable 'is_overrun' [-Wunused-variable]
+  217 |     bool is_overrun = p.spiFlags & SPI_FLAG_OVR;
+      |          ^~~~~~~~~~
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 226240	   1024	  27904	 255168	  3e4c0	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:23:34 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/output.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/output.d" -MT"Core/Src/output.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/output.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/output.cpp:12:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+../Core/Src/output.cpp: In function 'void dumpTickMsg(int)':
+../Core/Src/output.cpp:220:10: warning: unused variable 'is_overrun' [-Wunused-variable]
+  220 |     bool is_overrun = p.spiFlags & SPI_FLAG_OVR;
+      |          ^~~~~~~~~~
+../Core/Src/output.cpp:221:10: warning: unused variable 'is_rx_buffer_empty' [-Wunused-variable]
+  221 |     bool is_rx_buffer_empty = ! (p.spiFlags & SPI_FLAG_RXNE);
+      |          ^~~~~~~~~~~~~~~~~~
+../Core/Src/output.cpp:222:10: warning: unused variable 'is_tx_buffer_empty' [-Wunused-variable]
+  222 |     bool is_tx_buffer_empty = p.spiFlags & SPI_FLAG_TXE;
+      |          ^~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 228304	   1024	  27904	 257232	  3ecd0	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:26:31 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/spi.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/spi.cpp:2:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 228312	   1024	  27904	 257240	  3ecd8	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
+20:30:10 **** Incremental Build of configuration Debug for project interactive ****
+make -j9 all 
+arm-none-eabi-g++ "../Core/Src/main.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-g++ "../Core/Src/spi.cpp" -mcpu=cortex-m4 -std=gnu++20 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I../USB_DEVICE/App -I../USB_DEVICE/Target -I../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/spi.cpp:2:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+In file included from ../Drivers/CMSIS/Include/core_cm4.h:1960,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h:166,
+                 from ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:132,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.cpp:20:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h:29,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f4xx_hal_conf.h:275,
+                 from ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Src/main.cpp:20:
+../Core/Src/main.cpp: In function 'void SystemClock_Config()':
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:512:41: note: in expansion of macro 'SET_BIT'
+  512 |                                         SET_BIT(RCC->APB1ENR, RCC_APB1ENR_PWREN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:143:3: note: in expansion of macro '__HAL_RCC_PWR_CLK_ENABLE'
+  143 |   __HAL_RCC_PWR_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.cpp: In function 'void MX_GPIO_Init()':
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:2046:41: note: in expansion of macro 'SET_BIT'
+ 2046 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOEEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:350:3: note: in expansion of macro '__HAL_RCC_GPIOE_CLK_ENABLE'
+  350 |   __HAL_RCC_GPIOE_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:400:41: note: in expansion of macro 'SET_BIT'
+  400 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOCEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:351:3: note: in expansion of macro '__HAL_RCC_GPIOC_CLK_ENABLE'
+  351 |   __HAL_RCC_GPIOC_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:407:41: note: in expansion of macro 'SET_BIT'
+  407 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOHEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:352:3: note: in expansion of macro '__HAL_RCC_GPIOH_CLK_ENABLE'
+  352 |   __HAL_RCC_GPIOH_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:386:41: note: in expansion of macro 'SET_BIT'
+  386 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOAEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:353:3: note: in expansion of macro '__HAL_RCC_GPIOA_CLK_ENABLE'
+  353 |   __HAL_RCC_GPIOA_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h:393:41: note: in expansion of macro 'SET_BIT'
+  393 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIOBEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:354:3: note: in expansion of macro '__HAL_RCC_GPIOB_CLK_ENABLE'
+  354 |   __HAL_RCC_GPIOB_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:211:38: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  211 | #define SET_BIT(REG, BIT)     ((REG) |= (BIT))
+      |                                ~~~~~~^~~~~~~~
+../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:2039:41: note: in expansion of macro 'SET_BIT'
+ 2039 |                                         SET_BIT(RCC->AHB1ENR, RCC_AHB1ENR_GPIODEN);\
+      |                                         ^~~~~~~
+../Core/Src/main.cpp:355:3: note: in expansion of macro '__HAL_RCC_GPIOD_CLK_ENABLE'
+  355 |   __HAL_RCC_GPIOD_CLK_ENABLE();
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "interactive.elf" @"objects.list"   -mcpu=cortex-m4 -T"/Users/deep/build/tf/stm32/stm32-cli-template/interactive/STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="interactive.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: interactive.elf
+ 
+arm-none-eabi-size   interactive.elf 
+arm-none-eabi-objdump -h -S  interactive.elf  > "interactive.list"
+   text	   data	    bss	    dec	    hex	filename
+ 228336	   1024	  27904	 257264	  3ecf0	interactive.elf
+Finished building: default.size.stdout
+ 
+Finished building: interactive.list
+ 
